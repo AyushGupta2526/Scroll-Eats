@@ -16,6 +16,14 @@ const foodSchema = new moongoose.Schema({
     foodPartner: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'foodPartner',
+    },
+    saveCount: {
+        type: Number,
+        default: 0,
+    },
+    likeCount: {
+        type: Number,
+        default: 0,
     }
 })
 

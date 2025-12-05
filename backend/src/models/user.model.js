@@ -19,6 +19,5 @@ const userSchema = new moongoose.Schema({
     }
 )
 
-const userModel = moongoose.model('User', userSchema);
-
+const userModel = mongoose.model('User', userSchema);
 module.exports = userModel;
